@@ -31,7 +31,6 @@ function smoothscroll(event){
     })
 }
 
-    <script>
         function sendMessage() {
             const name = document.getElementById('name').value;
             const message = document.getElementById('message').value;
