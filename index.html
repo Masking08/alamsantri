@@ -145,15 +145,15 @@
             <form action="">
                 <div class="input-group">
                     <i data-feather="user"></i>
-                    <input type="text" placeholder="nama">
+                    <input type="text" placeholder="nama" id="name" required>
                 </div>
                 <div class="input-group">
                     <i data-feather="mail"></i>
-                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="message" id="message" required>
                 </div>
                 <div class="input-group">
                     <i data-feather="phone"></i>
-                    <input type="text" placeholder="no hp">
+                    <input type="text" placeholder="nomor" id="nomor" required>
                 </div>
                 <button type="submit" class="btn">Kirim Pesan</button>
             </form>
@@ -179,9 +179,16 @@
     </footer>
     <!-- FOOTER END -->
 
-    <!-- script -->
+    <!-- script contact-->
     <script>
-        feather.replace();
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const nomor = document.getElementById('nomor').value;
+
+            const url = "https://api.whatsapp.com/send?phone=6283869236077&text=Halo%20Admin%0ASaya%20*+"+ name +"*%0A*"+ message+ "*%0ANomor%20Saya%20*" + nomor +"*%0A";
+            window.open(url);
+        }
     </script>
 
     <script src="assets/js/main.js">
