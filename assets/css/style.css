@@ -393,10 +393,14 @@ footer {
     text-align: center;
     padding: 1rem 0 3rem;
     margin-top: 3rem;
+    font-size: 1.2rem;
 }
 
 footer .social {
     padding: 1rem 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 footer .social a {
