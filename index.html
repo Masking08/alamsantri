@@ -160,18 +160,18 @@
             1698292653855!5m2!1sid!2sid" allowfullscreen="" loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <form action="">
+            <form action="" onsubmit="sendMessage()">
                 <div class="input-group">
                     <i data-feather="user"></i>
-                    <input type="text" placeholder="nama">
+                    <input type="text" placeholder="Nama" id="name" required>
                 </div>
                 <div class="input-group">
                     <i data-feather="mail"></i>
-                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="Kirim Pesan" id="message" required>
                 </div>
                 <div class="input-group">
                     <i data-feather="phone"></i>
-                    <input type="text" placeholder="no hp">
+                    <input type="text" placeholder="Nomor" id="nomor" required>
                 </div>
                 <button type="submit" class="btn">Kirim Pesan</button>
             </form>
